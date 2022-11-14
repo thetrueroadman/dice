@@ -8,11 +8,17 @@ rollbtn.addEventListener("click", e => {
   let out = "";
   let total = 0;
 
-  for (let i = 0; i < number; i++) {
-    let result = roll(sides);
-    out += `<p>You rolled a ${result}</p>`;
-    total += result;
+  if (number > 256 || number < 1) {
+    out += "Invalid number of dice!";
+  } else {
+    for (let i = 0; i < number; i++) {
+      let result = roll(sides);
+      out += `<p>You rolled a ${result}</p>`;
+      total += result;
+    }
   }
+
+  let average = (total / number);
 
   let totalOut = document.createElement("p");
   totalOut.appendChild(document.createTextNode(`Total: ${total}`));
