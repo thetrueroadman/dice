@@ -6,15 +6,18 @@
   <title>Roll My Dice</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <h1>Roll My Dice</h1>
-  # of dice: <input type="number" id="diceAmount"/> <br>
-
-  Dice sides: <input type="number" id="diceSides"/> <br>
+  <div class="inputs">
+    <label for="diceAmount">Number of dice:</label> <br>
+    <input type="number" id="diceAmount" /> <br>
+    <label for="diceSides">Dice sides:</label> <br>
+    <input type="number" id="diceSides" /> <br>
+  </div>
 
   <button id="rollbtn">Roll</button>
   <div id="output">
