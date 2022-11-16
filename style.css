@@ -33,5 +33,21 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 }
 
 button {
+  height: 90px;
+  width: 120px;
+  background: green;
+  color: white;
+  font-size: 32px;
+  border: none;
+  border-radius: 5%;
+  cursor: pointer;
+  transition: all 0.05s ease-in;
+}
 
+button:hover {
+  background: darkgreen;
+}
+
+button:active {
+  transform: scale(0.95);
 }
