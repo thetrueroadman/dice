@@ -2,6 +2,7 @@
   background-color: lightblue;
   font-family: 'Roboto', sans-serif;
   text-align: center;
+  border: 1px solid red;
 }
 
 h1 {
@@ -50,4 +51,13 @@ button:hover {
 
 button:active {
   transform: scale(0.95);
+}
+
+#output {
+  background: lightgray;
+  border 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 24px;
+  justify-content: space-around;
 }
