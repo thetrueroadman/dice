@@ -18,13 +18,11 @@ rollbtn.addEventListener("click", e => {
     }
   }
 
-  let average = document.createElement("p");
-  average.appendChild(document.createTextNode(`Average: ${total / number}`));
+  let average = `Average: ${total / number}`;
 
-  let totalOut = document.createElement("p");
-  totalOut.appendChild(document.createTextNode(`Total: ${total}`));
+  let totalOut = `Total: ${total}`;
 
   document.getElementById("output").innerHTML = out;
-  document.getElementById("output").appendChild(totalOut);
-  document.getElementById("output").appendChild(average);
+  document.getElementById("total").innerHTML = totalOut;
+  document.getElementById("average").innerHTML = average;
 })
